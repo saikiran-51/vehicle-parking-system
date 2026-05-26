@@ -13,13 +13,15 @@ const Reservations = () => {
   }, []);
 
   const getReservations = async () => {
-    const response = await axios.get("http://localhost:5000/reservations");
+    const response = await axios.get(
+      "https://parknova.onrender.com/reservations",
+    );
 
     setReservations(response.data);
   };
 
   const cancelReservation = async (id) => {
-    await axios.delete(`http://localhost:5000/reservations/${id}`);
+    await axios.delete(`https://parknova.onrender.com/reservations/${id}`);
 
     getReservations();
     toast.info("Reservation Cancelled");

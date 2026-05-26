@@ -12,7 +12,7 @@ const Dashboard = () => {
   }, []);
 
   const getDashboardData = async () => {
-    const response = await axios.get("http://localhost:5000/dashboard");
+    const response = await axios.get("https://parknova.onrender.com/dashboard");
 
     setDashboardData(response.data);
   };

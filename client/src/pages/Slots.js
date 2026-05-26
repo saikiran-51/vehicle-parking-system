@@ -23,7 +23,7 @@ const Slots = () => {
   }, []);
 
   const getSlots = async () => {
-    const response = await axios.get("http://localhost:5000/slots");
+    const response = await axios.get("https://parknova.onrender.com/slots");
     setSlots(response.data);
   };
 
@@ -36,7 +36,7 @@ const Slots = () => {
 
   const onPaymentSuccess = async (data) => {
     try {
-      await axios.post("http://localhost:5000/reserve-slot", data);
+      await axios.post("https://parknova.onrender.com/reserve-slot", data);
       toast.success("Payment & Reservation Successful");
 
       getSlots();
