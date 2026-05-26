@@ -1,0 +1,35 @@
+.home-container {
+  background-color: #f0f4f8;
+  min-height: 100vh;
+}
+
+.dashboard-container {
+  padding: 30px;
+}
+
+.cards-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.dashboard-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 25px;
+  width: 220px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  text-align: center;
+}
+
+.card-title {
+  font-size: 20px;
+  color: #475569;
+}
+
+.card-count {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 10px;
+}

@@ -1,0 +1,57 @@
+.reservations-container {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 1.5rem 1.75rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+}
+
+.reservations-container h1 {
+  margin-bottom: 1.25rem;
+  font-size: 2rem;
+  color: #1f2937;
+  letter-spacing: -0.03em;
+}
+
+.reservations-container > div {
+  padding: 1rem 0;
+}
+
+.reservation-customer-name {
+  margin: 0.5rem 0 0.25rem;
+  font-size: 1.25rem;
+  color: #111827;
+}
+
+.reservation-vehicle-number,
+.reservation-slot-id,
+.reservation-start-time,
+.reservation-end-time {
+  margin: 0.25rem 0;
+  color: #4b5563;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.reservation-slot-id {
+  font-weight: 600;
+  color: #111827;
+}
+
+.reservations-container hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 1.5rem 0;
+}
+
+.cancel-btn {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}

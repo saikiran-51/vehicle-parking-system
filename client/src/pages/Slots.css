@@ -1,0 +1,57 @@
+.slots-container {
+  padding: 30px;
+}
+
+.filter-container {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.search-input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+}
+
+.filter-select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+}
+
+.slots-content {
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.popup-container {
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: none;
+}
+
+.popup-content {
+  width: 350px;
+  padding: 25px;
+  border-radius: 16px;
+  border: none;
+}
+
+.popup-overlay {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.slots-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 15px;
+  margin-left: 15px;
+  gap: 10px;
+}
