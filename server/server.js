@@ -1,11 +1,6 @@
 const express = require("express");
 const cors = require("cors");
 const path = require("path");
-console.log("BUILD PATH:", path.join(__dirname, "../client/build"));
-console.log(
-  "INDEX EXISTS:",
-  require("fs").existsSync(path.join(__dirname, "../client/build/index.html")),
-);
 
 const initializeDB = require("./database");
 
@@ -67,10 +62,6 @@ const startServer = async () => {
     const token = jwt.sign(payload, "MY_SECRET_TOKEN");
 
     res.send({ jwtToken: token });
-  });
-
-  app.get("/", (req, res) => {
-    res.send("Parking Backend Running");
   });
 
   app.get("/dashboard", async (req, res) => {
