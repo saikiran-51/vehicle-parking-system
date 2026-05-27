@@ -1,6 +1,11 @@
 const express = require("express");
 const cors = require("cors");
 const path = require("path");
+console.log("BUILD PATH:", path.join(__dirname, "../client/build"));
+console.log(
+  "INDEX EXISTS:",
+  require("fs").existsSync(path.join(__dirname, "../client/build/index.html")),
+);
 
 const initializeDB = require("./database");
 
